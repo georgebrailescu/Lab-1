@@ -28,13 +28,6 @@ function capteaza()
     ctx.drawImage(video, 0, 0, 640, 480);
 }
 
-const cnvs = document.querySelector("video");
+video.addEventListener("touchstart", capteaza);
 
-
-
-
-cnvs.addEventListener('click',
-capteaza);
-
-
-cnvs.addEventListener('touch', capteaza);
+video.addEventListener("mousedown", capteaza);
